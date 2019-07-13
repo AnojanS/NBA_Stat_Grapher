@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+           
+        <style>
+            html {
+  box-sizing: border-box;
+}
+            *, *:before, *:after {
+                box-sizing: inherit;
+                }
+                .row{
+                    justify-content: space-between;
+                }
+            body{
+                background-color: #282c34;
+                color: #ccf6ff;
+            }
+            h1{
+                display: flex;
+                justify-content: center;
+                flex-direction: row; 
+            }
+            .column {
+                float: left;
+                width: 33.3%;
+                margin-bottom: 16px;
+                padding: 0 8px;
+            }
+            @media screen and (max-width: 650px) {
+                .column {
+                width: 100%;
+                display: inline-block;
+                }
+            }
+            .Email{
+                display: inline-flex;
+                justify-content:  center;
+            }
+            .github{
+                display: inline-flex;
+                justify-content:  center;
+
+            }
+            .linkedIn{
+                display: inline-flex;
+                justify-content:  center;
+
+            }
+            .container::after, .row::after {
+                content: "";
+                clear: both;
+                display: table;
+                }
+
+            .circle {
+                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+                }
+
+            .container {
+                 padding: 0 10px;
+                }
+
+
+            h2{
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                 
+                }
+            img{
+                    width:  250px;
+                    height: 250px;
+                    padding: 0 70px;
+
+                }
+            i{
+                padding: 0 5px;
+            }
+
+
+            
+        </style>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+    <body>
+        <h1>Meet the Team</h1>
+        <br>
+        <div class= "row">
+            <div class="column">
+                <div class = "circle">
+                    
+                    <div class= container>
+                        <img src="Profiles/Brian.png" class="w3-circle" style="width: 100%">
+                        <h2><b>Brian Kamau</b></h2>
+                        <p class = "title"> Software Engineer</p>
+                        <p>Favourite Team: Golden State Warriors</p>
+                        <p>Favourite Player: Stephen Curry</p>
+                        <div class = "Email"> 
+                                <i class='fa fa-envelope' style='font-size:24px'></i>
+                                <a>bkama099@uottawa.ca</a>
+                            </div>
+                            <br>
+                            <div class = "github"> 
+                                <i class="fa fa-github" style="font-size:24px"></i>
+                                <a href="https://github.com/bk4159">https://github.com/bk4159</a>
+                            </div>
+                            <br>
+                            <div class ="linkedIn">
+                                <i class="fa fa-linkedin-square" style="font-size:24px"></i>
+                                <a href="https://www.linkedin.com/in/brianmkamau/">Brian Kamau</a>
+                             </div>
+                </div>
+            </div>
+        </div>
+
+        <div class= "row">
+            <div class="column">
+                <div class = "circle">
+                    <div class= container>
+                        <img src="Profiles/Sy.png" class="w3-circle" style="width: 100%">
+                        <h2><b>Sy Rajeswaran</b></h2>
+                        <p class = "title"> Software Engineer</p>
+                        <p>Favourite Team: Chicago Bulls</p>
+                        <p>Favourite Player: Dwyane Wade</p>
+                        <div class = "Email"> 
+                                <i class='fa fa-envelope' style='font-size:24px'></i>
+                                <a>sraje038@uottawa.ca</a>
+                            </div>
+                            <div class = "github"> 
+                                <i class="fa fa-github" style="font-size:24px"></i>
+                                <a href="https://github.com/Sy-Rajeswaran">https://github.com/Sy-Rajeswaran</a>
+
+                            </div>
+                            <br>
+                            <div class ="linkedIn">
+                                <i class="fa fa-linkedin-square" style="font-size:24px"></i>
+                                <a href="https://www.linkedin.com/in/sy-rajeswaran-897b05150/">Sy Rajeswaran</a>
+
+                            </div>
+                </div>
+            </div>
+        </div>
+
+        <div class= "row">
+            <div class="column">
+                <div class = "circle">
+                    <img src="Profiles/Anojan.png" class="w3-circle" style="width: 100%">
+                    <div class= container>
+                        <h2><b>Anojan Sabratnam</b></h2>
+                        <p class = "title"> Software Engineer</p>
+                        <p>Favourite Team: Toronto Raptors</p>
+                        <p>Favourite Player: Russell Westbrook</p>
+                        <div class = "Email"> 
+                            <i class='fa fa-envelope' style='font-size:24px'></i>
+                            <a>asaba091@uottawa.ca</a>
+                        </div>
+                        <br>
+                        <div class = "github">
+                            <i class="fa fa-github" style="font-size:24px"></i>
+                            <a href="https://github.com/AnojanS">https://github.com/AnojanS</a>
+                        </div>
+                        <br>
+                        <div class ="linkedIn"> 
+                            <i class="fa fa-linkedin-square" style="font-size:24px"></i>
+                            <a href="https://www.linkedin.com/in/anojan-sabaratnam/">Anojan Sabratnam</a>
+
+                        </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </body>
+</html>

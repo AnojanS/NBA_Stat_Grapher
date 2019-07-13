@@ -1,0 +1,114 @@
+body, html {
+    background-color: #282c34;
+    color: #ccf6ff;
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden; /* hide horizontal scrollbar */ 
+}
+
+/* for page container */
+.pageContainer {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* for navigation bar */
+.navigationBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #485861;
+    border-bottom: 1px solid #ccf6ff;
+}
+.navigationBar #logo, .navigationBar #aboutUsButton {
+    margin: 0 30px;
+}
+.navigationBar #logo {
+    max-width: 125px; /*actual image width*/
+    height: auto; /* maintain aspect ratio*/
+}
+.navigationBar #aboutUsButton {
+    height: 40px;
+    background-color: transparent;
+    color: #ccf6ff;
+    border: 1px solid #ccf6ff;
+    cursor: pointer;
+}
+
+
+/* for page contents */
+.pageContents {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* for welcome */
+.welcomeTitle {
+    font-size: 15vh;
+}
+
+/* for search bar */
+.searchBar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchBar input {
+    width: 100%;
+    max-width: 500px;
+    height: 50px;
+    font-size: 25px;
+    background: none;
+    border: 5px solid #485861;
+    color: #ccf6ff;
+    padding: 5px;
+}
+.searchBar button {
+    height: 70px;
+    width: 50px;
+    font-size: 25px;
+    color: #ccf6ff;
+    border: none;
+    background-color: #485861;
+    cursor: pointer;
+}
+
+
+/* for most popular players */
+.mostPopularPlayersTitle {
+    font-size: 30px;
+}
+.playerRow {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 30px;
+}
+.playerRow .player {
+    width: 200px;
+    height: 250px;
+    background-color: #485861;
+    border: 1px solid #ccf6ff;
+    border-radius: 2px;
+    margin: 20px 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.playerRow .headshot {
+    display: block;
+    width: 80%;
+    min-width: 100px;
+    max-width: 150px; /*actual image width*/
+    height: auto; /* maintain aspect ratio*/
+    margin: auto; /*optional centering of image*/
+    border-radius: 50%;
+}
+.player .playerName {
+    font-size: 25px;
+}

@@ -1,9 +1,12 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 body, html {
     background-color: #282c34;
     color: #ccf6ff;
     height: 100%;
     margin: 0;
-    overflow-x: hidden; /* hide horizontal scrollbar */
+    overflow-x: hidden; /* hide horizontal scrollbar */|
 }
 
 /* for page container */

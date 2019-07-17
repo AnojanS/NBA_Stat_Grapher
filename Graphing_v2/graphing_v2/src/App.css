@@ -1,0 +1,82 @@
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body, html {
+  background-color: #282c34;
+  color: #ccf6ff;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* for navigation bar */
+.navigationBar {
+  /* flexbox is used to layout content for page */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #485861;
+  border-bottom: 1px solid #ccf6ff;
+}
+.navigationBar #logo, .navigationBar #aboutUsButton {
+  margin: 0 30px;
+}
+.navigationBar #logo {
+  max-width: 125px; /*actual image width*/
+  height: auto; /* maintain aspect ratio*/
+}
+.navigationBar #aboutUsButton {
+  height: 40px;
+  background-color: transparent;
+  color: #ccf6ff;
+  border: 1px solid #ccf6ff;
+  cursor: pointer;
+}
+
+
+/* for page container */
+.pageContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+/* for chart div */
+.chart {
+  width: 100%;
+  max-width: 700px;
+  background-color: #ccf6ff;
+}

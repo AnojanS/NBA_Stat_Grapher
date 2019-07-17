@@ -1,4 +1,11 @@
-.App {
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body, html {
+  background-color: #282c34;
+  color: #ccf6ff;
+  height: 100%;
+  margin: 0;
   text-align: center;
 }
 
@@ -30,4 +37,46 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/* for navigation bar */
+.navigationBar {
+  /* flexbox is used to layout content for page */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #485861;
+  border-bottom: 1px solid #ccf6ff;
+}
+.navigationBar #logo, .navigationBar #aboutUsButton {
+  margin: 0 30px;
+}
+.navigationBar #logo {
+  max-width: 125px; /*actual image width*/
+  height: auto; /* maintain aspect ratio*/
+}
+.navigationBar #aboutUsButton {
+  height: 40px;
+  background-color: transparent;
+  color: #ccf6ff;
+  border: 1px solid #ccf6ff;
+  cursor: pointer;
+}
+
+
+/* for page container */
+.pageContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+/* for chart div */
+.chart {
+  width: 100%;
+  max-width: 700px;
+  background-color: #ccf6ff;
 }

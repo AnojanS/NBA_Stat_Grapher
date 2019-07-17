@@ -15,10 +15,51 @@
             *{
                 font-family: Georgia, 'Times New Roman', Times, serif;
             }
+            /* for navigation bar */
+            .navigationBar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            background-color: #485861;
+    border-bottom: 1px solid #ccf6ff;
+}
+.navigationBar #logo, .navigationBar #aboutUsButton {
+    margin: 0 30px;
+}
+.navigationBar #logo {
+    max-width: 125px; /*actual image width*/
+    height: auto; /* maintain aspect ratio*/
+}
+.navigationBar #aboutUsButton {
+    width: 80px;
+    height: 40px;
+    background-color: transparent;
+    color: #ccf6ff;
+    border: 1px solid #ccf6ff;
+    cursor: pointer;
+}
+.navigationBar #HelpButton {
+    width: 80px;
+    height: 40px;
+    background-color: transparent;
+    color: #ccf6ff;
+    border: 1px solid #ccf6ff;
+    cursor: pointer;
+}
             </style>
         </head>
         <body>
+                <div class="navigationBar">
+                        <a href="../Welcome/WelcomePage.html">
+                            <img src="../pictures/NBAStatGrapherLogo.png" id="logo" alt="NBA Stat Grapher Logo"  />
+                        </a> 
+                        <div>              
+                        <button id="aboutUsButton" onclick="window.location='../AboutUs/AboutUs.html'">About Us</button>
+                        <button id="HelpButton" onclick="window.location='../Help/Help.html'">Help</button>
+                    </div> 
+                    </div>
             <h1 style="font-family: Georgia, 'Times New Roman', Times, serif">Help Screen</h1>
+            <h2>***When a player is clicked a new tab with their stats is opened***</h2>
 
         </body>
 </html>

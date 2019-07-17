@@ -96,6 +96,15 @@
     height: auto; /* maintain aspect ratio*/
 }
 .navigationBar #aboutUsButton {
+    width: 80px;
+    height: 40px;
+    background-color: transparent;
+    color: #ccf6ff;
+    border: 1px solid #ccf6ff;
+    cursor: pointer;
+}
+.navigationBar #HelpButton {
+    width: 80px;
     height: 40px;
     background-color: transparent;
     color: #ccf6ff;
@@ -113,8 +122,11 @@
             <div class="navigationBar">
                     <a href="../Welcome/WelcomePage.html">
                         <img src="../pictures/NBAStatGrapherLogo.png" id="logo" alt="NBA Stat Grapher Logo"  />
-                    </a>                
+                    </a> 
+                    <div>              
                     <button id="aboutUsButton" onclick="window.location='../AboutUs/AboutUs.html'">About Us</button>
+                    <button id="HelpButton" onclick="window.location='../Help/Help.html'">Help</button>
+                </div> 
                 </div>
 
 

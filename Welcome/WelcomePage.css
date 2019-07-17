@@ -29,6 +29,15 @@ body, html {
     height: auto; /* maintain aspect ratio*/
 }
 .navigationBar #aboutUsButton {
+    width: 80px;
+    height: 40px;
+    background-color: transparent;
+    color: #ccf6ff;
+    border: 1px solid #ccf6ff;
+    cursor: pointer;
+}
+.navigationBar #HelpButton {
+    width: 80px;
     height: 40px;
     background-color: transparent;
     color: #ccf6ff;

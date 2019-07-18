@@ -18,19 +18,21 @@
         <div class = "pageContainer">
             <!-- navigation bar -->
             <div class="navigationBar">
-                <a href="./WelcomePage.html">
-                    <!-- logo provided by https://www.freelogodesign.org/ -->
-                    <img src="../pictures/NBAStatGrapherLogo.png" id="logo" alt="NBA Stat Grapher Logo" />
-                </a>                
-                <button id="aboutUsButton" onclick="window.location='../AboutUs/AboutUs.html'">About Us</button>
-            </div>
+                    <a href="../Welcome/WelcomePage.html">
+                        <img src="../pictures/NBAStatGrapherLogo.png" id="logo" alt="NBA Stat Grapher Logo"  />
+                    </a> 
+                    <div>              
+                    <button id="aboutUsButton" onclick="window.location='../AboutUs/AboutUs.html'" style="font-family: Georgia, 'Times New Roman', Times, serif;font-size: 14px">About Us</button>
+                    <button id="HelpButton" onclick="window.location='../Help/Help.html'" style="font-family: Georgia, 'Times New Roman', Times, serif;font-size: 14px">Help</button>
+                </div> 
+                </div>
 
             <div class="pageContents">
                 <h1 class="welcomeTitle">Welcome</h1>
                 <div class="searchBar">
                     <!-- search bar -->
                     <input type="text" placeholder="Search for your favourite player..." />
-                    <button id="search" onclick="window.location='#'"><i class="fas fa-search"></i></button>
+                    <button id="search" onclick="window.open('http://localhost:3000', '_blank')"><i class="fas fa-search"></i></button> <!-- redirect to running react app server in graphing_v2 folder (in Graphing_v2/graphing_v2 inner folder, run commands npm install and npm start)-->
                 </div>
                 <div class="mostPopularPlayers">
                     <h2 class="mostPopularPlayersTitle">Most Popular Players</h2>
@@ -38,7 +40,7 @@
                     <!-- images provided by https://www.espn.com/nba/player/ -->
                     <div class="playerRow">
                         <!-- row of players -->
-                        <div class="player" onclick="window.location='#'">
+                        <div class="player" onclick="window.open('http://localhost:3000', '_blank')">
                             <img src="../pictures/lebronJamesPic.png" class="headshot" alt="picture of player" />
                             <p class="playerName">LeBron James</p>
                         </div>

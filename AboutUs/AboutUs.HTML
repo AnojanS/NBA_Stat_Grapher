@@ -2,7 +2,7 @@
 <html>
     <head>
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel= "stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
            
         <style>
             html {
@@ -12,32 +12,34 @@
                 box-sizing: inherit;
                 }
 
-
-
             .row{
                     justify-content: space-between;
                 }
             body{
                 background-color: #282c34;
                 color: #ccf6ff;
+                margin: 0;
             }
             h1{
                 display: flex;
                 justify-content: center;
                 flex-direction: row; 
             }
+            /* Coloumns of the screen*/
             .column {
                 float: left;
-                width: 33.3%;
+                width: 33.3%; /*Screen relestate for everyone on the page*/
                 margin-bottom: 16px;
                 padding: 0 8px;
             }
+            /*Size for each persons card in the page*/
             @media screen and (max-width: 650px) {
                 .column {
                 width: 100%;
                 display: inline-block;
                 }
             }
+            /*For Contact Info*/
             .Email{
                 display: inline-flex;
                 justify-content:  center;
@@ -52,12 +54,13 @@
                 justify-content:  center;
 
             }
+            /* Contains the information in a card format*/
             .container::after, .row::after {
                 content: "";
                 clear: both;
                 display: table;
                 }
-
+            /* Card format Shadow color*/
             .circle {
                  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
                 }
@@ -77,6 +80,7 @@
             i{
                 padding: 0 5px;
             }
+            /* Font styling for all elements of the page*/
             *{
                 font-family: Georgia, 'Times New Roman', Times, serif;
             }
@@ -87,6 +91,7 @@
                 align-items: center;
             background-color: #485861;
     border-bottom: 1px solid #ccf6ff;
+    padding-right: 20px;
 }
 .navigationBar #logo, .navigationBar #aboutUsButton {
     margin: 0 30px;
@@ -96,6 +101,16 @@
     height: auto; /* maintain aspect ratio*/
 }
 .navigationBar #aboutUsButton {
+    width: 80px;
+    height: 40px;
+    background-color: transparent;
+    color: #ccf6ff;
+    border: 1px solid #ccf6ff;
+    cursor: pointer;
+    
+}
+.navigationBar #HelpButton {
+    width: 80px;
     height: 40px;
     background-color: transparent;
     color: #ccf6ff;
@@ -110,16 +125,21 @@
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     </head>
     <body>
+        <!--Navigation Bar-->
             <div class="navigationBar">
                     <a href="../Welcome/WelcomePage.html">
                         <img src="../pictures/NBAStatGrapherLogo.png" id="logo" alt="NBA Stat Grapher Logo"  />
-                    </a>                
+                    </a> 
+                    <div>              
                     <button id="aboutUsButton" onclick="window.location='../AboutUs/AboutUs.html'">About Us</button>
+                    <button id="HelpButton" onclick="window.location='../Help/Help.html'">Help</button>
+                </div> 
                 </div>
 
-
+        <!--Main Content-->
         <h1 style="font-family: Georgia, 'Times New Roman', Times, serif">Meet the Team</h1>
         <br>
+         <!--Brian's Profile-->
         <div class= "row">
             <div class="column">
                 <div class = "circle">
@@ -150,7 +170,7 @@
                 </div>
             </div>
         </div>
-
+<!--Sy's Profile-->
         <div class= "row">
             <div class="column">
                 <div class = "circle">
@@ -158,11 +178,12 @@
                         <div class="profiles">
                             <img src="Profiles/Sy.png" class="w3-circle" style="width: 100%; padding: 0 70px" width="250px" height="250px">
                         </div>
-                        
+                        <!--Sy's Bio-->
                         <h2><b>Sy Rajeswaran</b></h2>
                         <p class = "title"> Software Engineer</p>
                         <p>Favourite Team: Chicago Bulls</p>
                         <p>Favourite Player: Dwyane Wade</p>
+                        <!--Sy's Contact Info-->
                         <div class = "Email"> 
                                 <i class='fa fa-envelope' style='font-size:24px'></i>
                                 <a>sraje038@uottawa.ca</a>
@@ -181,7 +202,7 @@
                 </div>
             </div>
         </div>
-
+        <!--Anojan's Profile-->
         <div class= "row">
             <div class="column">
                 <div class = "circle">
@@ -190,10 +211,12 @@
                     </div>
                     
                     <div class= container>
+                        <!--Anojan's Bio-->
                         <h2><b>Anojan Sabratnam</b></h2>
                         <p class = "title"> Software Engineer</p>
                         <p>Favourite Team: Toronto Raptors</p>
                         <p>Favourite Player: Russell Westbrook</p>
+                        <!--Anojan's Contact Info-->
                         <div class = "Email"> 
                             <i class='fa fa-envelope' style='font-size:24px'></i>
                             <a>asaba091@uottawa.ca</a>

@@ -1,3 +1,6 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 body, html {
     background-color: #282c34;
     color: #ccf6ff;
@@ -20,6 +23,7 @@ body, html {
     align-items: center;
     background-color: #485861;
     border-bottom: 1px solid #ccf6ff;
+    padding-right: 20px;
 }
 .navigationBar #logo, .navigationBar #aboutUsButton {
     margin: 0 30px;
@@ -29,6 +33,15 @@ body, html {
     height: auto; /* maintain aspect ratio*/
 }
 .navigationBar #aboutUsButton {
+    width: 80px;
+    height: 40px;
+    background-color: transparent;
+    color: #ccf6ff;
+    border: 1px solid #ccf6ff;
+    cursor: pointer;
+}
+.navigationBar #HelpButton {
+    width: 80px;
     height: 40px;
     background-color: transparent;
     color: #ccf6ff;

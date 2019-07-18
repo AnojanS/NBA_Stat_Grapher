@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset = "utf-8">
+                <meta name = "viewport" content = "width=device-width">
+
+            <style>
+            /* Style elments for the body*/
+            body{
+            background-color: #282c34;
+            color: #ccf6ff;
+            margin: 0;
+            }
+            /* Style elments for the headers*/
+            h1{
+                display: flex;
+                justify-content: center;
+                flex-direction: row; 
+            }
+            h2{
+                display: flex;
+                justify-content: center;
+                flex-direction: row; 
+            }
+            *{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            /* for navigation bar */
+            .navigationBar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #485861;
+            border-bottom: 1px solid #ccf6ff;
+            padding-right: 20px;
+}
+.navigationBar #logo, .navigationBar #aboutUsButton {
+    margin: 0 30px;
+}
+.navigationBar #logo {
+    max-width: 125px; /*actual image width*/
+    height: auto; /* maintain aspect ratio*/
+}
+.navigationBar #aboutUsButton {
+    width: 80px;
+    height: 40px;
+    background-color: transparent;
+    color: #ccf6ff;
+    border: 1px solid #ccf6ff;
+    cursor: pointer;
+}
+.navigationBar #HelpButton {
+    width: 80px;
+    height: 40px;
+    background-color: transparent;
+    color: #ccf6ff;
+    border: 1px solid #ccf6ff;
+    cursor: pointer;
+}
+.pictures_help{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 900px;
+    padding: 0 15%;
+    
+}
+.Pics{
+    border: 1px solid #ccf6ff;
+    margin: 10px;
+}
+            </style>
+        </head>
+        <body>
+            <!--Navigation Bar-->
+                <div class="navigationBar">
+                        <a href="../Welcome/WelcomePage.html">
+                            <img src="../pictures/NBAStatGrapherLogo.png" id="logo" alt="NBA Stat Grapher Logo"  />
+                        </a> 
+                        <div>  
+                            <!--Buttons in Nav Bar-->            
+                        <button id="aboutUsButton" onclick="window.location='../AboutUs/AboutUs.html'" style="font-size: 14px">About Us</button>
+                        <button id="HelpButton" onclick="window.location='../Help/Help.html'" style="font-size: 14px">Help</button>
+                    </div> 
+                </div>
+                <!--Main content-->
+            <h1 style="font-family: Georgia, 'Times New Roman', Times, serif">Help Screen</h1>
+            
+            <div class="pictures_help">
+                <div class= "box">
+                    <img class="Pics" src="Pictures/Pic2.png" alt="HelpPic1" >
+                    
+                    <img class="Pics" src="Pictures/Pic1.png" alt="HelpPic1" >
+                </div>
+                
+                <br>
+            </div>
+
+        </body>
+</html>

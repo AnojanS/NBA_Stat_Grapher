@@ -100,11 +100,11 @@ class Chart extends Component{
                             enabled: true,
                             mode: 'single',
                             callbacks:{
-                              //when hovering over point on graph display y-axis value
+                              //when hovering over point on graph, display y-axis value
                               label: function(tooltipItems){
                                   return tooltipItems.yLabel+" pts"
                               },
-                              //when hovering over point on graph display hardcoded date and abbreviation for opposing team
+                              //when hovering over a point on graph, display hardcoded date of game and abbreviation for opposing team
                               afterBody: function() {
                                 return "21-03-2019 vs POR"; 
                              }
@@ -114,7 +114,7 @@ class Chart extends Component{
                             bodyFontSize: 20,
                         },
                         legend:{
-                            //hide auto generated graph legend
+                            //hide auto-generated graph legend
                             display:false,
                         },
                         //customize y and x axis on line graph

@@ -36,13 +36,16 @@ class Chart extends Component{
 
     renderSelector2 = () => {
         const { filter } = this.state
+
     
             return (
             <FormControl variant="outlined">
                 <Select
+                style = {{backgroundColor:"#ccf6ff",border:'1px solid #485861'}}
                 input={<OutlinedInput labelWidth={1} notched={false} />}
                 value={filter}
                 onChange={e => this.setState({ filter: e.target.value })}
+                
                 >
                 {CHART_STATS_COLS.map(col => (
                     <MenuItem key={col} value={col}>
@@ -60,6 +63,7 @@ class Chart extends Component{
             return (
             <FormControl variant="outlined">
                 <Select
+                style = {{backgroundColor:"#ccf6ff",border:'1px solid #485861'}}
                 input={<OutlinedInput labelWidth={1} notched={false} />}
                 value={filter2}
                 onChange={e => this.setState({ filter2: e.target.value })}
@@ -80,7 +84,14 @@ class Chart extends Component{
                 <form onSubmit = {this.props.getAllStats}>
                 {this.renderSelector()}
                 {this.renderSelector2()}
-                <button>
+                <button style= { {
+                    height: '40',
+                    backgroundColor: 'transparent',
+                    color: '#ccf6ff',
+                    border: '3px solid #ccf6ff',
+                    padding: '10px',
+                    margin: "10px",
+                }}>
                     Update
                 </button>
                 </form>
@@ -88,18 +99,40 @@ class Chart extends Component{
                     data = {this.state.chartData}
                     options={{
                         legend:{
-                            display:this.props.displayLegend,
+                            display:false,
                             potition:this.props.legendPosition,
                         },
                         scales: {
                             xAxes: [{
                                 gridLines: {
-                                    drawOnChartArea: false
+                                    drawOnChartArea: false,
+                                    color: "#fff"
+                                },
+                                ticks: {
+                                    beginAtZero: true,
+                                    fontColor: "#fff"
+                                },
+                                scaleLabel: {
+                                    display: true,
+                                    labelString: 'Games Played',
+                                    fontColor: "#fff",
+                                    fontSize: "17",
                                 }
                             }],
                             yAxes: [{
                                 gridLines: {
-                                    drawOnChartArea: false
+                                    drawOnChartArea: false,
+                                    color: "#fff"
+                                },
+                                ticks: {
+                                    beginAtZero: true,
+                                    fontColor: "#fff",
+                                },
+                                scaleLabel: {
+                                    display: true,
+                                    labelString: 'Points',
+                                    fontColor: "#fff",
+                                    fontSize: "17",
                                 }
                             }]
                         },

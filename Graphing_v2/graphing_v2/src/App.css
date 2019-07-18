@@ -39,6 +39,10 @@ body, html {
   }
 }
 
+/* for page height */
+#root, .App, .pageContainer {
+  height: 100%;
+}
 
 /* for navigation bar */
 .navigationBar {
@@ -69,14 +73,57 @@ body, html {
 .pageContainer {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 50px;
 }
 
 /* for chart div */
 .chart {
   width: 100%;
-  max-width: 700px;
-  background-color: #ccf6ff;
+  max-width: 900px;
+  background-color: #282c34;
+}
+
+/* for player div */
+.player {
+  /* CSS for each player div */
+  width: 300px;
+  background-color: #485861;
+  border: 1px solid #ccf6ff;
+  border-radius: 2px;
+  margin: 20px 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.player .headshot {
+  /* CSS for each player headshot (in each .player div) */
+  display: block;
+  width: 80%;
+  min-width: 100px;
+  max-width: 200px; /*actual image width*/
+  height: auto; /* maintain aspect ratio*/
+  max-height: 150px;
+  margin: auto; /*optional centering of image*/
+  border-radius: 50%;
+}
+.player .playerName {
+  font-size: 25px;
+  text-decoration: underline;
+  margin: 30px;
+}
+.playerBio .bioInfo {
+  display: block;
+}
+.bioInfo {
+  color: #ffffff;
+}
+.bioInfo#team {
+  margin-bottom: 10px;
+}
+.bioInfo .bioTitle {
+  color: #ccf6ff;
 }

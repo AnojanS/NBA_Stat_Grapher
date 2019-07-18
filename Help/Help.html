@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
         <head>
+                <meta charset = "utf-8">
+                <meta name = "viewport" content = "width=device-width">
 
             <style>
+            /* Style elments for the body*/
             body{
             background-color: #282c34;
             color: #ccf6ff;
+            margin: 0;
             }
+            /* Style elments for the headers*/
             h1{
+                display: flex;
+                justify-content: center;
+                flex-direction: row; 
+            }
+            h2{
                 display: flex;
                 justify-content: center;
                 flex-direction: row; 
@@ -17,11 +27,11 @@
             }
             /* for navigation bar */
             .navigationBar {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             background-color: #485861;
-    border-bottom: 1px solid #ccf6ff;
+            border-bottom: 1px solid #ccf6ff;
 }
 .navigationBar #logo, .navigationBar #aboutUsButton {
     margin: 0 30px;
@@ -49,15 +59,18 @@
             </style>
         </head>
         <body>
+            <!--Navigation Bar-->
                 <div class="navigationBar">
                         <a href="../Welcome/WelcomePage.html">
                             <img src="../pictures/NBAStatGrapherLogo.png" id="logo" alt="NBA Stat Grapher Logo"  />
                         </a> 
-                        <div>              
-                        <button id="aboutUsButton" onclick="window.location='../AboutUs/AboutUs.html'">About Us</button>
-                        <button id="HelpButton" onclick="window.location='../Help/Help.html'">Help</button>
+                        <div>  
+                            <!--Buttons in Nav Bar-->            
+                        <button id="aboutUsButton" onclick="window.location='../AboutUs/AboutUs.html'" style="font-size: 14px">About Us</button>
+                        <button id="HelpButton" onclick="window.location='../Help/Help.html'" style="font-size: 14px">Help</button>
                     </div> 
-                    </div>
+                </div>
+                <!--Main content-->
             <h1 style="font-family: Georgia, 'Times New Roman', Times, serif">Help Screen</h1>
             <h2>***When a player is clicked a new tab with their stats is opened***</h2>
 

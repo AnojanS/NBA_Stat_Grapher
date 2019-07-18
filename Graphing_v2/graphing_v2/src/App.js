@@ -2,39 +2,43 @@ import React,{Component} from 'react';
 import PlayerPic from './lebronJamesPic.png';
 import './App.css';
 import Chart from './Chart.js'
-import { async } from 'q';
+
+//Sources:
+//https://www.chartjs.org/docs/latest/
+//https://material-ui.com/getting-started/installation/
+
+//No particular site used for inspiration
 
 class App extends Component {
   constructor(){
     super();
     this.state = {
       chartData:{},
-      season: undefined,
-      stat_array: [],
     }
   }
   
 
   getAllStats = async(e) => {
     e.preventDefault();
-    //const season_choice = e.target.elements.season.value;
-    //const stat_choice = e.target.elements.stat.value;
-
+    //api data fetching Lebron James' point toals over the course of the 2018-2019 NBA season
+    //api data not used anywhere
     const api_call = await fetch(`https://www.balldontlie.io/api/v1/stats?seasons[]=2018&player_ids[]=237&per_page=100`);
     const api_call_data = await api_call.json();
   }
 
   componentWillMount(){
+    //run getChartData once App.js component is mounted
     this.getChartData();
   }
 
   getChartData(){
-    //AJAX CALL HERE
     this.setState({
       chartData:{
+        //empty x-axis values for Lebron James' graph
         labels: ["","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""],
         datasets:[
            {
+              //styling for Lebron James' line graph
               backgroundColor: "2E48EE",
               borderColor: "#ccf6ff",
               pointBackgroundColor: "#ccf6ff",
@@ -44,8 +48,8 @@ class App extends Component {
               fill: false,
               pointHoverBackgroundColor: "2E48EE",
               pointHoverBorderColor: "2E48EE",
-               label: 'Lebron James',
-               data:[
+              //hardcoded y-axis values for Lebron James' graph
+              data:[
                 18,
                 28,
                 29,
@@ -109,10 +113,10 @@ class App extends Component {
     });
   }
   
+  //render Lebron James' graph, photograph, and hardcoded description
   render(){
   return (
     <div className="App">
-
       <div className="pageContainer">
         <div className="player">
           <img src={PlayerPic} class="headshot" alt="picture of player" />

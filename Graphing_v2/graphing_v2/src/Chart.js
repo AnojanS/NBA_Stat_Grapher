@@ -15,7 +15,7 @@ class Chart extends Component{
         this.state = {
             chartData:props.chartData,
             filter: 'pts',
-            filter2: '2018',
+            filter2: "'18 - '19",
             stat: CHART_STATS_COLS.reduce((acc, col) => {
                 acc[col] = {}
                 return acc
@@ -91,13 +91,30 @@ class Chart extends Component{
                     border: '3px solid #ccf6ff',
                     padding: '10px',
                     margin: "10px",
-                }}>
+                    cursor: 'pointer',
+                }} onClick={() => alert("Graph Updated!")}>
                     Update
                 </button>
                 </form>
                 <Line 
                     data = {this.state.chartData}
                     options={{
+                        tooltips:{
+                            displayColors:false,
+                            enabled: true,
+                            mode: 'single',
+                            callbacks:{
+                              label: function(tooltipItems){
+                                  return tooltipItems.yLabel+" pts"
+                              },
+                              afterBody: function() {
+                                return "21-03-2019 vs POR"; 
+                             }
+                            },
+                            backgroundColor:"#485861",
+                            bodySpacing: 10,
+                            bodyFontSize: 20,
+                        },
                         legend:{
                             display:false,
                             potition:this.props.legendPosition,

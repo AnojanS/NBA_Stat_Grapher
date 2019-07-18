@@ -17,19 +17,11 @@ class App extends Component {
 
   getAllStats = async(e) => {
     e.preventDefault();
-    const season_choice = e.target.elements.season.value;
-    const stat_choice = e.target.elements.stat.value;
+    //const season_choice = e.target.elements.season.value;
+    //const stat_choice = e.target.elements.stat.value;
 
-    const api_call = await fetch(`https://www.balldontlie.io/api/v1/stats?seasons[]=${season_choice}&player_ids[]=237&per_page=100`);
+    const api_call = await fetch(`https://www.balldontlie.io/api/v1/stats?seasons[]=2018&player_ids[]=237&per_page=100`);
     const api_call_data = await api_call.json();
-    console.log(season_choice)
-    console.log(stat_choice)
-    console.log(api_call_data);
-    this.setState({
-      //stat is based on choice and loops through all stats
-      season: season_choice,
-
-    })
   }
 
   componentWillMount(){

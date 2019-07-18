@@ -85,7 +85,7 @@ class Chart extends Component{
                 {this.renderSelector()}
                 {this.renderSelector2()}
                 <button style= { {
-                    height: '40',
+                    fontSize: 20,
                     backgroundColor: 'transparent',
                     color: '#ccf6ff',
                     border: '3px solid #ccf6ff',

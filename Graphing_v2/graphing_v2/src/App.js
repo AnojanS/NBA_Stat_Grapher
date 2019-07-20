@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import PlayerPic from './lebronJamesPic.png';
+import PlayerPic from './lebronJamesPic.png'; //image provided by https://www.espn.com/nba/player/
 import './App.css';
 import Chart from './Chart.js'
 import { async } from 'q';

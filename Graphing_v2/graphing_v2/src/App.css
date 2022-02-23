@@ -72,7 +72,6 @@ body, html {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  cursor: pointer;
 }
 .player .headshot {
   /* CSS for each player headshot (in each .player div) */

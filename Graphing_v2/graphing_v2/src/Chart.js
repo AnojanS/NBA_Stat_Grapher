@@ -87,7 +87,7 @@ class Chart extends Component{
                     padding: '10px',
                     margin: "10px",
                     cursor: 'pointer',
-                }} onClick={() => alert("Graph Updated!")}>
+                }} onClick={() => alert("Graph functionality is not implemented currently")}>
                     Update
                 </button>
                 </form>
